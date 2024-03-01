@@ -1,3 +1,4 @@
+
 .wrapper {
   display: flex;
   height: 100vh;
@@ -9,14 +10,19 @@
 }
 
 .wrapper button {
-    padding: 10px 20px;
-    background: #228be6;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    border: 1px solid #228be6;
-    border-radius: 6px;
+  padding: 10px 20px;
+  background: #21aeca;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid #21aeca;
+  border-radius: 6px;
+}
+
+.wrapper button:hover {
+  background: #39b9d2;
+  border-color: #39b9d2;
 }
 
 .accordian {
@@ -25,23 +31,40 @@
 }
 
 .item {
-  background: #228be6;
+  background: #39b9d2;
   margin-bottom: 10px;
   padding: 10px 20px;
   border-radius: 6px;
 }
 
+.item:hover {
+  background: #21aeca;
+}
+
 .title {
-  color: #fff;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 
+.title:hover {
+  background: #3ab4cc;
+}
+
 .content {
-  color: #fff;
+  color: #2c2c2c;
   height: auto;
   font-family: Inter;
   font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  .accordion {
+    width: 100vh;
+  }
 }

@@ -44,7 +44,7 @@ const Accordion = () => {
                 className="title"
               >
                 <h3>{dataItem.question}</h3>
-                <span>{enableMultiSelection && multiple.includes(dataItem.id) ? "✔️" : selected === dataItem.id ? "✔️" : "➕"}</span>
+                <span>{enableMultiSelection && multiple.includes(dataItem.id) ? "➖" : selected === dataItem.id ? "➖" : "➕"}</span>
               </div>
               {enableMultiSelection
                 ? multiple.indexOf(dataItem.id) !== -1 && (

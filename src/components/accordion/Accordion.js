@@ -10,11 +10,11 @@ const Accordion = () => {
   const [enableMultiSelection, setEnableMultiSelection] = useState(false);
   const [multiple, setMultiple] = useState([]);
 
-  function handleSingleSelection(getCurrentId) {
+  const handleSingleSelection = (getCurrentId) => {
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
 
-  function handleMultiSelection(getCurrentId) {
+  const handleMultiSelection = (getCurrentId) => {
     let cpyMutiple = [...multiple];
     const findIndexOfCurrentId = cpyMutiple.indexOf(getCurrentId);
 
